@@ -25,7 +25,7 @@ class ArticlesController < ApplicationController
       format.xlsx {
         response.headers[
           'Content-Disposition'
-        ] = "attachment; filename='items.xlsx'"
+        ] = "attachment; filename=articles.xlsx"
       }
       format.html { render :index }
     end
